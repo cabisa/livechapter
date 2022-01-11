@@ -49,6 +49,12 @@ The content is like:
 
 Copy this to the description of your video. The chapter are created automaticly. For furter information read the article on youtube [Video chapters] (https://support.google.com/youtube/answer/9884579?hl=en).
 
+## How it works
+The script startchapters.sh will create or update the file chapters.cfg. This only contains the filename of the current chapter file.
+Also add the first Chapter with the timestamp `0:00` to the file chapter-YYYY-mm-dd_HHMMSS.log (with the actual timestamp).
+
+The addchapter.sh script gets the filename out of the chapters.cfg file, gets the last modification timestamp of the config file and calculates the new timestamp and append this with the chapter name to the log file.
+
 ## Known errors
 
 1. If the stream is not started, an older log file is used or there will be an error
