@@ -24,12 +24,16 @@ Add action: `internal: Run shell path (local)`
 Path: `<complete path>/startchapters.sh <First chapter Name>` 
 The parameter `First chapter Name` is optional. Default value is `Intro`
 
+Example for Path: /Users/JohnDoe/projects/livechapter/startchapters.sh Introduction and motivation
+
 ### Step 3
 Add an addidtional action to each chapter button:
 
 Add action: `internal: Run shell path (local)`
 Path: `<complete path>/addchapter.sh <Chapter Name>` 
 The parameter `Chapter Name` is optional but very usefull. Default value is `Chapter`
+
+Example for Path: /Users/JohnDoe/projects/livechapter/addchapter.sh Short Introduction
 
 ### Step 4
 Open the directory where the scripts are stored and search for a file like `chapters-2022-01-11_192555.log` (the date is an example. Your file contains the start date of your stream).
@@ -48,3 +52,4 @@ Copy this to the description of your video. The chapter are created automaticly.
 ## Known errors
 
 1. If the stream is not started, an older log file is used or there will be an error
+2. It is not possible to use companion variables [companion issue 1248] (https://github.com/bitfocus/companion/issues/1248)
