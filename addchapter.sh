@@ -10,7 +10,7 @@ else
 fi
 
 DIRNAME=$(dirname $0)
-CONFIGFILE=$DIRNAME/stopwatch.cfg
+CONFIGFILE=$DIRNAME/chapters.cfg
 FILENAME=$(cat $CONFIGFILE)
 
 START=$(date -r $CONFIGFILE "+%s")
